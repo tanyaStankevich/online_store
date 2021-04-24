@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.ul1{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 683px;
+    margin: 0 auto;
+}
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+._header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+}
+
+.text1{
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+    display: block;
+    margin-left: 15px;
+    margin-right: 40px;
+}
+.letter{
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+.but_header1{
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #222222;
+    width: 87px;
+    height: 38px;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+
+}
+.but_header2{
+    border: 1px solid #e6e6e6;
+    width: 36px;
+    background-color: #ffffff;
+}
+.but_header3{
+    width: 130px;
+    height: 38px;
+    border: none;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    background-color: #f16d7f;
+    color: #ffffff;
+    margin-left: 26px;
+}
+.but_header3:hover{
+    color: #f16d7f;
+    background-color: #ffffff;
+    border-color: #f16d7f;
+}
+
+.form_class{
+    
+    width: 317px;
+    height: 38px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px 3px 3px 0px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #a4a4a4;
+    border: none;
+    margin-left: 16px;
+}
+.smallheader1{
+    margin-left: 232px;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+.str{
+    margin-left: 8px;
+}
+.smallheader2{
+    margin-right: 232px;
+   display: block;
+   display: flex;
+   align-items: center;
+}
+.sm3{
+    border:#e8e8e8 2px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu{
+
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    text-decoration: none;
+    align-items: center;
+    }
+.sm {
+    display: block;
+    display: flex;
+   align-self:center;
+}
+    .pol{
+        width: 12px;
+        height: 92px;
+        background-color: #f16d7f;
+        margin-right: 12px;
+    }
+
+    .text2{
+      
+        font-size: 60px;
+        line-height: 0.75;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        color: #222222;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lux{
+        font-size: 40px;
+    }
+
+    .fashion{
+        font-size: 40px;
+        color: #f16d7f;
+    }
+    .baner{
+        margin-left: 232px;
+        width: 650px;
+        display: flex;
+        
+
+    }
+
+    .baner_bac{
+        background-image: url(./img/banner.png);
+        background-repeat: no-repeat;
+        height: 615px;
+        display: block;
+        display: flex;
+        align-items:center;
+    }
+    .fon {
+        background-color: #e8e8e8;
+        width: 100%;
+    }
+
+    .imgs_class{
+        display: flex;
+       
+        margin-bottom: 103px;
+        margin-top: 82px;
+        justify-content: center;
+    }
+    .left_imgs {
+        margin-right: 21px;
+    }
+    .sign{
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #222222;
+        
+        background-color: #ffffff;
+        padding: 17px 22px;
+
+    }
+    .letter_{
+        font-size: 30px;
+        color: #f16d7f;
+    }
+    .par1{
+        width: 175px;
+        
+    }
+    .par2{
+        width: 225px;
+        
+    }
+    .par3{
+        width: 162px;
+       
+    }
+    .par4{
+        width: 180px;
+          }
+
+    .poz1{
+        position: relative;
+        margin-bottom: 21px;
+    }
+    .poz2{
+        position: absolute;
+        top: 27px;
+    }
