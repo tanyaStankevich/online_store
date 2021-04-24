@@ -113,12 +113,16 @@ body{
    display: flex;
    align-items: center;
 }
+
 .sm3{
-    border:#e8e8e8 2px solid;
+    
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+.brd {
+    border:#e8e8e8 2px solid;
+    width: 100%;
+}
 .menu{
 
     font-size: 14px;
