@@ -235,3 +235,76 @@ body{
         position: absolute;
         top: 27px;
     }
+    .FI{
+        font-size: 30px;
+        line-height: 54px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: #222222;
+        text-align: center;
+    }
+    .FI_small{
+        font-size: 14px;
+        line-height: 54px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #9f9f9f;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .tov{
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #222222;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .price{
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #f16d7f;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+        margin-left: 232px;
+        margin-right: 232px;
+        }
+
+    
+    .img_hov:hover{
+        
+        opacity: 0.5;
+    }
+
+    .FI_but{
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 54px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        width: 212px;
+        height: 48px;
+        background-color: #f16d7f;
+        border: none;
+      
+    }
+    .FI_but:hover{
+        color: #f16d7f;
+        background-color: #ffffff;
+    }
+
+    .str_im{
+        margin-left: 10px;
+    }
+    .FI_but_cent{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 113px;
+    }
