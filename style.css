@@ -12,7 +12,8 @@ body{
     justify-content: center;
     width: 683px;
     margin: 0 auto;
-    position: relative;
+    
+    padding: 15px 0px;
 }
 .container {
     width: 1600px;
@@ -133,11 +134,11 @@ summary {
         position: absolute;
         z-index: 10000;
         border-color: 1px solid #e8e8e8;
-        height: 530px;
+        height: 515px;
         background-color: #ffffff;
         border-radius: 5px;
         padding: 15px 0px 0px 15px;
-        width: 262px;
+        width: 247px;
 }
 .nav_but::before{
     content: "";
@@ -187,6 +188,7 @@ summary {
     letter-spacing: 0.025em;
     color: #232323;
     border-bottom: 1px solid #4f4f4f;
+    margin-top: 20px;
 }
 
 .smallheader2{
@@ -219,6 +221,7 @@ justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .krest{
     font-family: FontAwesome;
     font-size: 16px;
@@ -257,11 +260,12 @@ justify-content: space-between;
     background-color: #ffffff;
     border: none;
     display: block;
+    padding: 5px 5px;
 }
 .korz_sod
 {
     position: absolute;
-    top:60px;
+    top:40px;
     width: 236px;
     height: 414px;
     background-color: #ffffff;
@@ -331,11 +335,7 @@ background-color: #ececec;
     display: flex;
     justify-content: space-between;
 }
-.sm3{
-    
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+
 .brd {
     border-top:#e8e8e8 2px solid;
     border-bottom:#e8e8e8 2px solid;
@@ -354,21 +354,25 @@ background-color: #ececec;
     padding-right: 30px;
     padding-bottom: 20px;
     }
-.menu:hover{
-    color: #f16d7f;
 
-}
-.mega-list:hover .mega-menu{
-    display: flex;
-}
 .mega-link:hover{
     color: #f16d7f;
 
 }
+.mega_list:hover .mega-menu{
+    display: flex;
+}
+.menu:hover{
+    color: #f16d7f;
+
+}
+.mega_list{
+    position: relative;
+}
 .mega-menu {
     position: absolute;
-    top: 26px;
-    left: 45px;
+    top: 35px;
+    left: -25px;
     padding: 17px 24px;
     display: none;
     border: 1px solid #e8e8e8;
@@ -390,8 +394,14 @@ background-color: #ececec;
     border-top: 1px solid #e8e8e8;
     border-left: 1px solid #e8e8e8;
 }
+.last::before{
+        left: 750px;
+   }
+.mega_list:hover .last{
+    right: 0;
+    left:-731px;
 
-
+}
 .mega_h{
     font-size: 14px;
     line-height: 32px;
