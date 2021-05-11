@@ -112,7 +112,7 @@ details[open] > summary::after {
 .but_header3 {
   width: 130px;
   height: 38px;
-  border: none;
+  border: 1px solid transparent;
   font-size: 15px;
   line-height: 32px;
   font-weight: 400;
@@ -120,6 +120,19 @@ details[open] > summary::after {
   background-color: #f16d7f;
   color: #ffffff;
   margin-left: 26px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+._but-fin {
+  width: 273px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-left: 0px;
 }
 
 .but_header3:hover {
@@ -392,13 +405,16 @@ details[open] > summary::after {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 3px;
-  border: none;
+  border: 1px solid transparent;
   margin-bottom: 10px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .but_cost1:hover {
   background-color: #ffffff;
   color: #f16d7f;
+  border: 1px solid #f16d7f;
 }
 
 .but_cost2 {
@@ -481,7 +497,7 @@ details[open] > summary::after {
   height: 310px;
   background-color: #ffffff;
   border-radius: 5px;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .mega-menu:before {
@@ -804,7 +820,9 @@ details[open] > summary::after {
   width: 212px;
   height: 48px;
   background-color: #f16d7f;
-  border: none;
+  border: 1px solid transparent;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .FI_but:hover {
@@ -1095,6 +1113,9 @@ details[open] > summary::after {
   border-radius: 0px 23px 23px 0px;
   position: absolute;
   left: 270px;
+  border: 1px solid transparent;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .butsubm:hover {
@@ -1262,6 +1283,7 @@ details[open] > summary::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1000;
 }
 
 .fon_line {
@@ -1379,6 +1401,11 @@ details[open] > summary::after {
   margin-bottom: 10px;
 }
 
+.karus:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .singlePage {
   width: 100%;
   height: 777px;
@@ -1431,6 +1458,7 @@ details[open] > summary::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 1000;
 }
 
 .roses_line {
@@ -1574,11 +1602,14 @@ details[open] > summary::after {
   height: 55px;
   background-color: #ef5b70;
   color: #ffffff;
+  border: 1px solid transparent;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
   border: none;
   text-align: center;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .but_singlPage:hover {
@@ -1613,7 +1644,6 @@ details[open] > summary::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: 1px solid #eaeaea;
   padding-bottom: 29px;
   padding-top: 29px;
   text-decoration: none;
@@ -1666,6 +1696,10 @@ details[open] > summary::after {
   margin-right: 315px;
 }
 
+.bot_bord {
+  border-bottom: 1px solid #eaeaea;
+}
+
 .label_check {
   font-size: 12px;
   line-height: 1.2;
@@ -1706,6 +1740,20 @@ details[open] > summary::after {
   border: 1px solid #eaeaea;
   margin-top: 34px;
   margin-bottom: 80px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.but_checkout:hover {
+  color: #ef5b70;
+  border: 1px solid #ef5b70;
+}
+
+.rot:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .form_left {
@@ -1752,6 +1800,17 @@ details[open] > summary::after {
   height: 50px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.but_login:hover {
+  color: #ef5b70;
+  border: 1px solid #ef5b70;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .fogot {
@@ -1776,15 +1835,8 @@ details[open] > summary::after {
 
 .checkout_p1:hover {
   color: #ef5b70;
-}
-
-.checkout_p1:hover .fields {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .radio_type {
@@ -2041,12 +2093,15 @@ details[open] > summary::after {
   line-height: 26px;
   font-weight: 700;
   background-color: #ef5b70;
+  border: 1px solid transparent;
   color: #ffffff;
   width: 150px;
   height: 44px;
   border: none;
   border-radius: 3px;
   margin-bottom: 113px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .but_product:hover {
@@ -2064,5 +2119,280 @@ details[open] > summary::after {
           justify-content: flex-end;
   width: 843px;
   padding-left: 45px;
+}
+
+.ShoppingCart-fin {
+  margin: 90px 232px 0px 232px;
+}
+
+.ShoppingCart-fin .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.ShoppingCart-fin .names .namestr {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: #222222;
+  padding-bottom: 20px;
+  margin-right: 97px;
+}
+
+.ShoppingCart-fin .names ._mod {
+  margin-right: 400px;
+}
+
+.ShoppingCart-fin .first-str {
+  margin-top: 20px;
+  border-bottom: 1px solid #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ShoppingCart-fin .first-str .img {
+  margin-bottom: 20px;
+}
+
+.ShoppingCart-fin .first-str .img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.ShoppingCart-fin .first-str .namestr-mar {
+  margin-left: 20px;
+  margin-right: 190px;
+}
+
+.ShoppingCart-fin .first-str .namestr-mar .namestr1 {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.ShoppingCart-fin .first-str .namestr-mar .namestr1min {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #575757;
+}
+
+.ShoppingCart-fin .first-str .namestr-mar .namestr1min2 {
+  font-weight: 300;
+  color: #6f6e6e;
+}
+
+.ShoppingCart-fin .first-str .mod-shopcart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 612px;
+}
+
+.ShoppingCart-fin .first-str .mod-shopcart .namestr2 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #656565;
+  margin-right: 120px;
+  text-align: center;
+}
+
+.ShoppingCart-fin .first-str .mod-shopcart .num-st {
+  width: 54px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-right: 120px;
+  text-align: center;
+}
+
+.ShoppingCart-fin .first-str .mod-shopcart .but-st {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #c0c0c0;
+  text-align: center;
+}
+
+.ShoppingCart-fin .first-str .mod-shopcart .but-st:hover {
+  color: #ef5b70;
+}
+
+.but-cc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 44px;
+  margin-bottom: 60px;
+}
+
+.clear-continuer {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  width: 235px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.clear-continuer:hover {
+  color: #ef5b70;
+  border: 1px solid #ef5b70;
+}
+
+.shopCart-p {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.shopCart-d {
+  width: 355px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-bottom: 20px;
+  z-index: 1000;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.shopCart-d-p {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #b1b1b1;
+  padding-left: 15px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  width: 340px;
+  height: 45px;
+}
+
+.shopCart-b {
+  width: 100px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+._mod-b {
+  width: 118px;
+  height: 35px;
+}
+
+.shopCart-b:hover {
+  color: #ef5b70;
+  border: 1px solid #ef5b70;
+}
+
+.shopCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shopCart-p1 {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.fin-el {
+  width: 274px;
+  height: 214px;
+  background-color: #f5f3f3;
+  padding-left: 43px;
+  padding-right: 43px;
+}
+
+.fin-class {
+  margin: 0px 232px 80px 232px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fin-p1 {
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+._fin-p1 {
+  margin-left: 20px;
+}
+
+.fin-p2 {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  padding-bottom: 20px;
+}
+
+._fin-p2-mod {
+  color: #f16d7f;
+  margin-left: 20px;
+}
+
+.fin-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 10px;
+}
+
+._fin-txt {
+  border-bottom: 1px solid #e2e2e2;
 }
 /*# sourceMappingURL=style.css.map */
