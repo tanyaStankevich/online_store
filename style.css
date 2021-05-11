@@ -1666,7 +1666,6 @@ details[open] > summary::after {
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
-  margin-top: 37px;
   margin-bottom: 10px;
 }
 
@@ -1740,10 +1739,8 @@ details[open] > summary::after {
   border: 1px solid #eaeaea;
   margin-top: 34px;
   margin-bottom: 80px;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  -webkit-transition: border 0.3s;
-  transition: border 0.3s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .but_checkout:hover {
@@ -1751,7 +1748,7 @@ details[open] > summary::after {
   border: 1px solid #ef5b70;
 }
 
-.rot:hover {
+.rot:hover .but_checkout {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -1800,17 +1797,18 @@ details[open] > summary::after {
   height: 50px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  -webkit-transition: border 0.3s;
-  transition: border 0.3s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .but_login:hover {
   color: #ef5b70;
   border: 1px solid #ef5b70;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+}
+
+.rots:hover .but_login {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .fogot {
@@ -1828,9 +1826,6 @@ details[open] > summary::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .checkout_p1:hover {

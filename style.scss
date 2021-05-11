@@ -1331,7 +1331,7 @@ $checkout_border: 1px solid #eaeaea;
     font-weight: 400;
     text-transform: uppercase;
     color: $color_p_checkout;
-    margin-top: 37px;
+    
     margin-bottom: 10px;
 }
 $color_p2_checkout: #b3b2b2;
@@ -1392,15 +1392,15 @@ $color_p2_checkout: #b3b2b2;
     border: 1px solid #eaeaea;
     margin-top: 34px;
     margin-bottom: 80px;
-    transition: color 0.3s;
-    transition: border 0.3s;
+    transition: all 1s;
+    
 }
 .but_checkout:hover{
     color: #ef5b70;
     border: 1px solid #ef5b70;
     
     }
-.rot:hover{
+.rot:hover .but_checkout{
     transform: rotate(180deg);
 }
 .form_left{
@@ -1437,13 +1437,16 @@ width: 180px;
 height: 50px;
 background-color: #ffffff;
 border: $checkout_border;
-transition: color 0.3s;
-    transition: border 0.3s;
+transition: all 1s;
+   
 }
 .but_login:hover{
     color: #ef5b70;
     border: 1px solid #ef5b70; 
-    transform: rotate(180deg);
+   
+}
+.rots:hover .but_login{
+    transform: rotate(360deg);
 }
 .fogot{
     font-size: 14px;
@@ -1457,7 +1460,7 @@ margin-left: 30px;
     background-color: #ffffff;
      margin-top: 40px;
     display: flex;
-    align-items: center;
+    
 }
 
 .checkout_p1:hover{
@@ -1521,7 +1524,9 @@ margin-top: 15px;
 }
 .card2{
     margin-right: 25px;
+    
 }
+
 .grey_img2{
     display: flex;
     justify-content: space-between;
