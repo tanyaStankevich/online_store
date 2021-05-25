@@ -53,7 +53,7 @@
 
             <div class="smallheader2">
                 <div class="menu_korz">
-                    <a href="#" class="korz"><img src="./img/korzina.png" alt="korzina">
+                    <a href="ShoppingCart.html" class="korz"><img src="./img/korzina.png" alt="korzina">
                         <div class="korz_sod">
                             <div class="korz_sod_1">
                                 <img src="./img/korz_men.png" alt="men" class="korz_sod_img">
@@ -85,14 +85,16 @@
                                 <div class="text_cost1">$500.00</div>
                             </div>
                             <div class="but_cost">
-                                <button type="submit" class="but_cost1">Checkout</button>
-                                <button type="submit" class="but_cost2">Go to cart</button>
+                                <form action="Checkout.html"><button type="submit" class="but_cost1">Checkout</button>
+                                </form>
+                                <form action="ShoppingCart.html"><button type="submit" class="but_cost2">Go to
+                                        cart</button></form>
                             </div>
                         </div>
                     </a>
                 </div>
 
-                <button class="but_header3" type="submit">My Account<img src="./img/white_st.png" alt="white_str"
+                <button class="but_header3" type="submit">My Account <img src="./img/white_st.png" alt="white_str"
                         class="str"></button>
             </div>
         </div>
@@ -487,244 +489,290 @@
                 </details>
             </aside>
 
-            <div class="main_cards">
+
+            <section class="main-cards-main">
+                <div class="main_cards">
 
 
-                <section class="big_search">
-                    <form class="serche" action="#">
-                        <fieldset>
-                            <legend class="trending">Trending now</legend>
-                            <nav class="nav_trend_">
-                                <a href="#" class="nav_prod">Bohemian</a>
-                                <a href="#" class="nav_prod">Floral</a>
-                                <a href="#" class="nav_prod">Lace </a>
-                                <a href="#" class="nav_prod">Floral</a>
-                                <a href="#" class="nav_prod">Lace</a>
-                                <a href="#" class="nav_prod">Bohemian</a>
-                            </nav>
-                        </fieldset>
-                        <fieldset>
-                            <legend class="trending">Size</legend>
-                            <div class="size_check">
-                                <input type="checkbox">
-                                <label class="trending2">XXS</label>
-                                <input type="checkbox">
-                                <label class="trending2">XS</label>
-                                <input type="checkbox">
-                                <label class="trending2">S</label>
-                                <input type="checkbox">
-                                <label class="trending2">M</label>
-                                <input type="checkbox">
-                                <label class="trending2">L</label>
-                                <input type="checkbox">
-                                <label class="trending2">XL</label>
-                                <input type="checkbox">
-                                <label class="trending2">XXL</label>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend class="trending">Price</legend>
-                            <input id="price" type="range" min="52" max="400" placeholder="300" step="10"
-                                class="range_st">
-                            <div class="range_p">
-                                <p class="trending2 range_trend">52$</p>
-                                <p class="trending2 range_trend">400$</p>
-                            </div>
-                        </fieldset>
-                    </form>
-
-                    <section class="sort_numbers">
-                        <div class="line_fon"></div>
-                        <form class="serch2" action="#">
-                            <fieldset class="sort_datalist">
-                                <label for="sort" class="sort">Sort by</label>
-                                <input id="sort" list="sort_product" class="sort_pr" placeholder="Name">
+                    <section class="big_search">
+                        <form class="serche" action="#">
+                            <fieldset>
+                                <legend class="trending">Trending now</legend>
+                                <nav class="nav_trend_">
+                                    <a href="#" class="nav_prod">Bohemian</a>
+                                    <a href="#" class="nav_prod">Floral</a>
+                                    <a href="#" class="nav_prod">Lace </a>
+                                    <a href="#" class="nav_prod">Floral</a>
+                                    <a href="#" class="nav_prod">Lace</a>
+                                    <a href="#" class="nav_prod">Bohemian</a>
+                                </nav>
                             </fieldset>
-                            <fieldset class="sort_datalist">
-                                <label for="numbers" class="sort">Show</label>
-                                <input id="numbers" list="number_product" class="sort_pr" placeholder="9">
+                            <fieldset>
+                                <legend class="trending">Size</legend>
+                                <div class="size_check">
+                                    <input type="checkbox">
+                                    <label class="trending2">XXS</label>
+                                    <input type="checkbox">
+                                    <label class="trending2">XS</label>
+                                    <input type="checkbox">
+                                    <label class="trending2">S</label>
+                                    <input type="checkbox">
+                                    <label class="trending2">M</label>
+                                    <input type="checkbox">
+                                    <label class="trending2">L</label>
+                                    <input type="checkbox">
+                                    <label class="trending2">XL</label>
+                                    <input type="checkbox">
+                                    <label class="trending2">XXL</label>
+                                </div>
                             </fieldset>
-
-                            <datalist id="sort_product">
-                                <option label="Name" value="Name"></option>
-                                <option label="Price" value="Price"></option>
-                                <option label="Size" value="Size"></option>
-                            </datalist>
-                            <datalist id="number_product">
-                                <option value="3"></option>
-                                <option value="6"></option>
-                                <option value="9"></option>
-                            </datalist>
+                            <fieldset>
+                                <legend class="trending">Price</legend>
+                                <input id="price" type="range" min="52" max="400" placeholder="300" step="10"
+                                    class="range_st">
+                                <div class="range_p">
+                                    <p class="trending2 range_trend">52$</p>
+                                    <p class="trending2 range_trend">400$</p>
+                                </div>
+                            </fieldset>
                         </form>
+
+                        <section class="sort_numbers">
+                            <div class="line_fon"></div>
+                            <form class="serch2" action="#">
+                                <fieldset class="sort_datalist">
+                                    <label for="sort" class="sort">Sort by</label>
+                                    <input id="sort" list="sort_product" class="sort_pr" placeholder="Name">
+                                </fieldset>
+                                <fieldset class="sort_datalist">
+                                    <label for="numbers" class="sort">Show</label>
+                                    <input id="numbers" list="number_product" class="sort_pr" placeholder="9">
+                                </fieldset>
+
+                                <datalist id="sort_product">
+                                    <option label="Name" value="Name"></option>
+                                    <option label="Price" value="Price"></option>
+                                    <option label="Size" value="Size"></option>
+                                </datalist>
+                                <datalist id="number_product">
+                                    <option value="3"></option>
+                                    <option value="6"></option>
+                                    <option value="9"></option>
+                                </datalist>
+                            </form>
+                        </section>
                     </section>
-                </section>
 
 
-                <div class="cards2">
-                    <div class="card card2">
-                        <a href="#" class="img_hov"><img src="./img/product_img1.png" alt="mango t-shirt">
-                            <div class="text_card">
-                                <p class="tov">Mango People T-shirt</p>
-                                <p class="price">$52.00</p>
+                    <div class="cards2">
+                        <div class="card card2">
+                            <a href="#" class="img_hov"><img src="./img/product_img1.png" alt="mango t-shirt">
+                                <div class="text_card">
+                                    <p class="tov">Mango People T-shirt</p>
+                                    <p class="price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="grey_img grey_second">
+                                <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz"
+                                        class="korz_but">Add
+                                    to Cart</button>
+                                <div class="grey_img2">
+                                    <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
+                                    <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
+                                    </button>
+                                </div>
                             </div>
-                        </a>
-                        <div class="grey_img grey_second">
-                            <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz" class="korz_but">Add
-                                to Cart</button>
-                            <div class="grey_img2">
-                                <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
-                                <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
-                                </button>
+                        </div>
+
+                        <div class="card card2">
+                            <a href="#" class="img_hov"><img src="./img/product_img2.png" alt="mango t-shirt">
+                                <div class="text_card">
+                                    <p class="tov">Mango People T-shirt</p>
+                                    <p class="price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="grey_img grey_second">
+                                <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz"
+                                        class="korz_but">Add
+                                    to Cart</button>
+                                <div class="grey_img2">
+                                    <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
+                                    <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card2">
+                            <a href="#" class="img_hov"><img src="./img/product_img3.png" alt="mango t-shirt">
+                                <div class="text_card">
+                                    <p class="tov">Mango People T-shirt</p>
+                                    <p class="price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="grey_img grey_second">
+                                <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz"
+                                        class="korz_but">Add
+                                    to Cart</button>
+                                <div class="grey_img2">
+                                    <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
+                                    <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card2">
+                            <a href="#" class="img_hov"><img src="./img/product_img4.png" alt="mango t-shirt">
+                                <div class="text_card">
+                                    <p class="tov">Mango People T-shirt</p>
+                                    <p class="price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="grey_img grey_second">
+                                <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz"
+                                        class="korz_but">Add
+                                    to Cart</button>
+                                <div class="grey_img2">
+                                    <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
+                                    <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <a href="#" class="img_hov"><img src="./img/product_img5.png" alt="mango t-shirt">
+                                <div class="text_card">
+                                    <p class="tov">Mango People T-shirt</p>
+                                    <p class="price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="grey_img grey_second">
+                                <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz"
+                                        class="korz_but">Add
+                                    to Cart</button>
+                                <div class="grey_img2">
+                                    <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
+                                    <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <a href="#" class="img_hov"><img src="./img/product_img6.png" alt="mango t-shirt">
+                                <div class="text_card">
+                                    <p class="tov">Mango People T-shirt</p>
+                                    <p class="price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="grey_img grey_second">
+                                <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz"
+                                        class="korz_but">Add
+                                    to Cart</button>
+                                <div class="grey_img2">
+                                    <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
+                                    <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <a href="#" class="img_hov"><img src="./img/product_img7.png" alt="mango t-shirt">
+                                <div class="text_card">
+                                    <p class="tov">Mango People T-shirt</p>
+                                    <p class="price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="grey_img grey_second">
+                                <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz"
+                                        class="korz_but">Add
+                                    to Cart</button>
+                                <div class="grey_img2">
+                                    <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
+                                    <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <a href="#" class="img_hov"><img src="./img/product_img8.png" alt="mango t-shirt">
+                                <div class="text_card">
+                                    <p class="tov">Mango People T-shirt</p>
+                                    <p class="price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="grey_img grey_second">
+                                <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz"
+                                        class="korz_but">Add
+                                    to Cart</button>
+                                <div class="grey_img2">
+                                    <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
+                                    <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <a href="#" class="img_hov"><img src="./img/product_img9.png" alt="mango t-shirt">
+                                <div class="text_card">
+                                    <p class="tov">Mango People T-shirt</p>
+                                    <p class="price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="grey_img grey_second">
+                                <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz"
+                                        class="korz_but">Add
+                                    to Cart</button>
+                                <div class="grey_img2">
+                                    <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
+                                    <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card card2">
-                        <a href="#" class="img_hov"><img src="./img/product_img2.png" alt="mango t-shirt">
-                            <div class="text_card">
-                                <p class="tov">Mango People T-shirt</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="grey_img grey_second">
-                            <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz" class="korz_but">Add
-                                to Cart</button>
-                            <div class="grey_img2">
-                                <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
-                                <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="card card2">
-                        <a href="#" class="img_hov"><img src="./img/product_img3.png" alt="mango t-shirt">
-                            <div class="text_card">
-                                <p class="tov">Mango People T-shirt</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="grey_img grey_second">
-                            <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz" class="korz_but">Add
-                                to Cart</button>
-                            <div class="grey_img2">
-                                <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
-                                <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card card2">
-                        <a href="#" class="img_hov"><img src="./img/product_img4.png" alt="mango t-shirt">
-                            <div class="text_card">
-                                <p class="tov">Mango People T-shirt</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="grey_img grey_second">
-                            <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz" class="korz_but">Add
-                                to Cart</button>
-                            <div class="grey_img2">
-                                <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
-                                <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
-                                </button>
-                            </div>
-                        </div>
+                <div class="pag-but">
+                    <div class="pagination">
+                        <ul class="pag-ul">
+                            <li><a href="#" class="pag-li">&#8249</a></li>
+                            <li>
+                                <a href="Product.html" class="active pag-li">1</a>
+                            </li>
+                            <li><a href="#" class="pag-li">2</a></li>
+                            <li><a href="#" class="pag-li">3</a></li>
+                            <li><a href="#" class="pag-li">4</a></li>
+                            <li><a href="#" class="pag-li">5</a></li>
+                            <li><a href="#" class="pag-li">6</a></li>
+                            <!--<li><a href="#" class="pag-li">7</a></li>
+                    <li><a href="#" class="pag-li">8</a></li>
+                    <li><a href="#" class="pag-li">9</a></li>
+                    <li><a href="#" class="pag-li">10</a></li>
+                    <li><a href="#" class="pag-li">11</a></li>
+                    <li><a href="#" class="pag-li">12</a></li>
+                    <li><a href="#" class="pag-li">13</a></li>
+                    <li><a href="#" class="pag-li">14</a></li>
+                    <li><a href="#" class="pag-li">15</a></li>
+                    <li><a href="#" class="pag-li">16</a></li>
+                    <li><a href="#" class="pag-li">17</a></li>
+                    <li><a href="#" class="pag-li">18</a></li>
+                    <li><a href="#" class="pag-li">19</a></li>-->
+                            <li>
+                                <a href="#" class="disable pag-li"><span>...</span></a>
+                            </li>
+                            <li><a href="#" class="pag-li">20</a></li>
+                            <li><a href="#" class="pag-li">&#8250</a></li>
+                        </ul>
                     </div>
-                    <div class="card card2">
-                        <a href="#" class="img_hov"><img src="./img/product_img5.png" alt="mango t-shirt">
-                            <div class="text_card">
-                                <p class="tov">Mango People T-shirt</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="grey_img grey_second">
-                            <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz" class="korz_but">Add
-                                to Cart</button>
-                            <div class="grey_img2">
-                                <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
-                                <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card2">
-                        <a href="#" class="img_hov"><img src="./img/product_img6.png" alt="mango t-shirt">
-                            <div class="text_card">
-                                <p class="tov">Mango People T-shirt</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="grey_img grey_second">
-                            <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz" class="korz_but">Add
-                                to Cart</button>
-                            <div class="grey_img2">
-                                <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
-                                <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card2">
-                        <a href="#" class="img_hov"><img src="./img/product_img7.png" alt="mango t-shirt">
-                            <div class="text_card">
-                                <p class="tov">Mango People T-shirt</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="grey_img grey_second">
-                            <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz" class="korz_but">Add
-                                to Cart</button>
-                            <div class="grey_img2">
-                                <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
-                                <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card2">
-                        <a href="#" class="img_hov"><img src="./img/product_img8.png" alt="mango t-shirt">
-                            <div class="text_card">
-                                <p class="tov">Mango People T-shirt</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="grey_img grey_second">
-                            <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz" class="korz_but">Add
-                                to Cart</button>
-                            <div class="grey_img2">
-                                <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
-                                <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card2">
-                        <a href="#" class="img_hov"><img src="./img/product_img9.png" alt="mango t-shirt">
-                            <div class="text_card">
-                                <p class="tov">Mango People T-shirt</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="grey_img grey_second">
-                            <button class="grey_img_but"><img src="./img/korz_but.png" alt="korz" class="korz_but">Add
-                                to Cart</button>
-                            <div class="grey_img2">
-                                <button class="grey_img_but2 "><img src="./img/str_product.png" alt="str"></button>
-                                <button class="grey_img_but2"><img src="./img/serdce.png" alt="serdce">
-                                </button>
-                            </div>
-                        </div>
+                    <div class="but">
+                        <button type="submit" class="but_product">View All</button>
                     </div>
                 </div>
-                <div class="but">
-                    <button type="submit" class="but_product">View All</button>
-                </div>
-            </div>
-
+            </section>
         </section>
-
 
 
         <section class="captions1">
@@ -819,11 +867,11 @@
 
                 <div class="navfoot1">
                     <p class="navfoot_h">COMPANY</p>
-                    <a href="#" class="navfoot-link">home</a>
-                    <a href="#" class="navfoot-link">shop</a>
-                    <a href="#" class="navfoot-link">about</a>
-                    <a href="#" class="navfoot-link">how it works</a>
-                    <a href="#" class="navfoot-link">contacts</a>
+                    <a href="#" class="navfoot-link">Home</a>
+                    <a href="#" class="navfoot-link">Shop</a>
+                    <a href="#" class="navfoot-link">About</a>
+                    <a href="#" class="navfoot-link">How it works</a>
+                    <a href="#" class="navfoot-link">Contacts</a>
                 </div>
 
 
