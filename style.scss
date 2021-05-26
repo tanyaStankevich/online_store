@@ -324,11 +324,13 @@ background-color: #ececec;
     color: #222222;
     margin-bottom: 35px;
 }
-.but_cost{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+    .but_cost{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 .but_cost1{
     width: 225px;
     height: 50px;
@@ -1434,6 +1436,13 @@ $color_p2_checkout: #b3b2b2;
     color: red;
 }
 #input_pol{
+    width: 390px;
+    height: 45px;
+    background-color: #ffffff;
+    border: $checkout_border;
+    margin-bottom: 15px;
+}
+#input_pol1{
     width: 390px;
     height: 45px;
     background-color: #ffffff;

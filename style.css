@@ -1808,6 +1808,14 @@ details[open] > summary.but_header1::after {
   margin-bottom: 15px;
 }
 
+#input_pol1 {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-bottom: 15px;
+}
+
 .label_check {
   margin-bottom: 15px;
 }
